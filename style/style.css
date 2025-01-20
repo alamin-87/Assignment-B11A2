@@ -1,0 +1,112 @@
+/* ----------------------------------- font------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* ---------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul ,ol{
+    list-style:none ;
+    
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------------header-------------------- */
+.navbar{
+    padding-top: 20px;
+}
+.nav_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.nav_logo span{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Quicksand", serif;
+    color: black;
+}
+.nav_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 186px;
+}
+.content_text ul{
+    display: flex;
+    gap: 32px;
+}
+.content_text ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Quicksand", serif;
+    color: orange;
+}
+.content_button a{
+    background-color: orange;
+    padding: 10px 60px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Quicksand", serif;
+    color: white;
+
+}
+.nav_icon{
+    display: none;
+}
+
+
+
+/* ------------------------------responsive------------------- */
+@media screen and (max-width:576px) {
+    .container{
+        width: 358px;
+        padding: 0 20px;
+    }
+    .navbar{
+        padding-top: 12px;
+    }
+    .project_header{
+        border: 1px solid orange;
+        padding-bottom: 12px;
+        /* border-top: none;
+        border-left: none;
+        border-right: none; */
+    }
+    .nav_content{
+        display: none;
+        gap: 0px;
+    }
+    .nav_logo img{
+        width: 46px;
+        height: 46px;
+    }
+    .nav_logo span{
+       display: none;
+    }
+    .nav_icon{
+        display: block;
+    }
+    .nav_icon i{
+        width: 30px;
+        height: 30px;
+        margin-top: 14px;
+    }
+    .navbar .span{
+        display: block;
+    }
+}
